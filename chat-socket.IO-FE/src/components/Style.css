@@ -1,0 +1,95 @@
+.rcw-widget-container {
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px 20px 0;
+	position: fixed;
+	right: 0;
+	z-index: 9999;
+}
+
+.rcw-conversation-container {
+	border-radius: 10px;
+	box-shadow: 0 2px 10px 1px #b5b5b5;
+	min-width: 370px;
+	max-width: 90vw;
+	position: relative;
+}
+
+.rcw-conversation-container.active {
+	opacity: 1;
+	transform: translateY(0);
+	transition: opacity 0.3s ease, transform 0.3s ease,
+		-webkit-transform 0.3s ease;
+}
+
+.rcw-conversation-container .rcw-header {
+	background-color: #35cce6;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 15px 0 25px;
+}
+
+.rcw-messages-container {
+	background-color: #fff;
+	height: 50vh;
+	max-height: 410px;
+	overflow-y: scroll;
+	padding-top: 10px;
+}
+
+.rcw-sender {
+	align-items: center;
+	display: flex;
+	background-color: #f4f7f9;
+	height: 45px;
+	padding: 5px;
+	border-radius: 0 0 10px 10px;
+}
+
+.rcw-new-message {
+	width: 100%;
+	border: 0;
+	background-color: #f4f7f9;
+	height: 30px;
+	padding-left: 15px;
+}
+
+.rcw-send {
+	background: #f4f7f9;
+	border: 0;
+}
+
+.rcw-send .rcw-send-icon {
+	height: 25px;
+}
+
+.rcw-message {
+	margin: 10px;
+	display: flex;
+	word-wrap: break-word;
+}
+
+.rcw-response {
+	background-color: #f4f7f9;
+}
+
+.rcw-message-text p {
+	margin: 0;
+}
+
+.rcw-client {
+	background-color: #a3eaf7;
+	margin-left: auto;
+}
+
+.rcw-client,
+.rcw-response {
+	border-radius: 10px;
+	/* padding: 15px; */
+	max-width: 215px;
+	text-align: left;
+}
